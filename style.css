@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	 background-image: linear-gradient(-90deg, #42525A, #171C1F, #000000);
+}
+
+
+@font-face {
+	font-family: PublicaSans_Bold;
+	src: url(font/PublicaSans-Bold.otf);
+}
+
+@font-face {
+	font-family: PublicaSans_Black;
+	src: url(font/PublicaSans-Black.otf);
+}
+
+@font-face {
+	font-family: PublicaSans_ExtraLightItalic;
+	src: url(font/PublicaSans-ExtraLightItalic.otf);
+}
+
+@font-face {
+	font-family: PublicaSans_Light;
+	src: url(font/PublicaSans-Light.otf);
+}
+
+
+.input-file{/* GAMBIARRA */
+	position: absolute;
+	top: 0; 
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.input-file-container-center{
+	margin-top: 130px;
+
+	width: 100%;
+}
+.bold{
+	font-family: PublicaSans_Black;
+}
+
+.black{
+	font-family: PublicaSans_Bold;
+}
+
+.input-file-container{/* DIV MAIN ENTRADA */
+	border: dashed 2px #E01C55;
+	height: 240px;
+	width: 740px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.inteiro{
+	color: #EDEFF1;
+	margin-top: 50px;
+}
+.inteiro h1{
+	font-size: 50px;
+}
+.inteiro h2{
+	font-size: 14px;
+	color: #E01C55;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.button-enviar{
+	padding: 10px 30px;
+	border: none;
+	display: block;
+	left: 40px: 
+}
+.input-file-click{/* BOTÃO ABRIR PASTA */ 
+	display: inline-block;
+	padding: 20px 12px; 
+	background-image: linear-gradient(120deg, #42525A, #171C1F, #000000);
+	color: #EDEFF1;
+	margin-top: 6%;
+	font-family: PublicaSans_Light;
+	font-size: 10px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.input-file-click:hover{
+	background: #000000;
+	color: #E01C55;
+	transition: all 1s;
+}
+
+.h3-arraste{/* TEXTO ARRASTE */
+	margin-top: 60px;
+	font-family: PublicaSans_Light;
+	color: #E01C55;
+	text-shadow: 0px 0px 3px #000;
+	transition: all 0.4s;
+}
+
+.img-excel{
+	width: 40px;
+	height: 40px;
+	margin-top: 30px;
+	display: none;
+	opacity: 0;
+	transition: all 0.4s;
+}
+
+
+.input-file-container:hover .h3-arraste{
+	text-shadow: 2px 4px 3px #000;	
+}
+
+.container-final{
+	text-align: center;
+}
+
+.container-final .p-titulo{
+	margin-top: 20px;
+	font-family: PublicaSans_Light;
+	color: #fff;
+}
+.container-final .p-nomes{
+	font-family: PublicaSans_Light;
+	color: #fff;
+	font-size: 14px
+}
+
+.arquivo-selecionado{
+	margin-top: 10px;
+	font-family: PublicaSans_Light;
+	font-size: 14px;
+	color: #E01C55;
+	opacity: 1;
+}
+
+#btn-enviar{
+	border: none;
+	display: block;
+	margin-top: 40px;
+	padding: 2px 7px;
+	margin-right: 30px;
+}
