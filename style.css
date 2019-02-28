@@ -3,7 +3,7 @@
 	margin: 0;
 }
 body{
-	 background-image: linear-gradient(-90deg, #42525A, #171C1F, #000000);
+	background-image: linear-gradient(-90deg, #42525A, #171C1F, #000000);
 }
 
 
@@ -144,9 +144,28 @@ body{
 }
 
 #btn-enviar{
+	margin-top: 60px;
+	padding: 10px 50px;
 	border: none;
-	display: block;
-	margin-top: 40px;
-	padding: 2px 7px;
-	margin-right: 30px;
+	background-image: linear-gradient(120deg, #171C1F, #000000);
+	color: #E01C55;
+	border: solid 1px;
+	border-color: rgb(224, 28, 85, 0);
+	font-family: PublicaSans_Bold;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.8s all;
+	display: none;
+	animation: movimento 1.3s infinite linear;
+}
+
+@keyframes movimento {
+    0% {border-color: rgb(224, 28, 85, 1);}
+    50% {border-color: rgb(224, 28, 85, 0);}
+    100% {border-color: rgb(224, 28, 85, 1);}
+}
+
+#btn-enviar:hover{
+	background: #E01C55;
+	color: #000000;
 }
