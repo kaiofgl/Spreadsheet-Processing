@@ -48,11 +48,19 @@ _ |_|  |______|_|__|_|
 
 </head>
 <body>
+	<?php 
+	session_start()
+	 ?>
+	<div class="tela-inteira">
+		<h1 class="loading-processando">PROCESSANDO</h1>
+		<div class="lds-ripple"><div></div><div></div></div>
+	</div>
 	<div class="inteiro">
 		<h1 class="center-text bold">PROCESSAMENTO DE DADOS</h1>
 		<h2 class="center-text black">SISTEMA DE PROCESSAMENTO DE PLANILHAS</h2>
 	</div>
-	<form action="#">
+	<form>
+
 		<div class="input-file-container-center">
 			<div class="input-file-container">
 				<img class="img-excel" src="img/excel.png" alt="">
@@ -62,17 +70,26 @@ _ |_|  |______|_|__|_|
 
 				<label for="my-file" class="input-file-click">Selecione o arquivo no seu computador</label>		
 				<!-- <p class="arquivo-selecionado">Nenhum arquivo selecionado</p> -->
-				<button id="btn-enviar" href="processado.php">PROCESSAR</button>	
+								<!-- LOADING TEST -->
+				
 			</div>
 		</div>
+
 <!-- <div class="container-final">
 <p class="p-titulo">Desenvolvido por:</p>
 <p class="p-nomes">nome1<br>nome1<br>nome1<br>nome1<br>nome1<br></p>
 </div> -->
 </form>
-<!-- <textarea class="form-control" rows=35 cols=120 id="xlx_json"></textarea> -->
+<div class="output-json">
+	<p style="color:#fff">olá</p>
+</div>
 
-<script src="js/main.js"></script>
+
+<div class="bnt-center">
+	<button id="btn-enviar">PROCESSAR</button>	
+</div>
+
+
 
 </body>
 </html>

@@ -18,6 +18,10 @@
 	<p class="output-json"></p>
 
 	<script src="js/main.js"></script>
-
+	<script>
+			var teste = sessionStorage.getItem('array-finalzao')
+		    console.log(JSON.parse(teste));
+            
+	</script>
 </body>
 </html>
